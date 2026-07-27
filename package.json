@@ -1,0 +1,41 @@
+{
+  "name": "lomigunger-net",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio de Lomig Unger — Astro + GitHub Pages (basé sur BracoZS/astro-starter-portfolio).",
+  "license": "MIT",
+  "author": "Lomig Unger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blomig/lomigungernet"
+  },
+  "homepage": "https://lomigunger.net",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.0.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.2",
+    "prettier": "^3.9.4",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3"
+  }
+}
