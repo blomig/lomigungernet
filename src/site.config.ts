@@ -4,10 +4,10 @@ export const SITE = {
   name: 'Lomig Unger',
   role: 'Concepteur de choses',
   email: 'lomig.unger@gmail.com',
-  tagline: 'Je conçois et construis des choses utiles, claires, qui tiennent la route.',
+  tagline: 'J''aime construire des choses. Si possible utiles',
   description:
-    'Portfolio de Lomig Unger — conception et fabrication de choses numériques, avec un souci de clarté, de détail et d’usage réel.',
-  status: 'En train de construire lomigunger.net · ouvert aux échanges',
+    'Portfolio de Lomig Unger — conception et fabrication de choses, avec un souci de clarté, de détail et d’usage réel.',
+  status: 'En train de construire des trucs · ouvert aux échanges',
   social: [
     { label: 'GitHub', href: 'https://github.com/blomig' },
     // { label: 'LinkedIn', href: 'https://www.linkedin.com/in/...' },
