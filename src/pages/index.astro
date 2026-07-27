@@ -25,17 +25,17 @@ const selected = [...featured, ...rest].slice(0, 5);
     </h1>
 
     <p class="text-ink-soft mt-6 max-w-md">
-      {SITE.role} — based on the work below, not a list of buzzwords.
+      {SITE.role} — d’après les projets ci-dessous, pas une liste de buzzwords.
     </p>
 
     <div class="mt-8 flex flex-wrap items-center gap-3">
-      <Button href="/work" variant="solid">View the work →</Button>
-      <Button href="#contact" variant="ghost">Say hello</Button>
+      <Button href="/work" variant="solid">Voir les projets →</Button>
+      <Button href="#contact" variant="ghost">Me contacter</Button>
     </div>
   </section>
 
   <section id="work" class="mx-auto max-w-3xl px-6 pb-20">
-    <SectionHeading eyebrow="Selected work" count={allWork.length} />
+    <SectionHeading eyebrow="Projets" count={allWork.length} />
     <div>
       {selected.map((entry) => <WorkRow entry={entry} />)}
     </div>
@@ -46,7 +46,7 @@ const selected = [...featured, ...rest].slice(0, 5);
             href="/work"
             class="text-ink-soft hover:text-signal font-mono text-xs transition-colors"
           >
-            View all {allWork.length} projects →
+            Voir les {allWork.length} projets →
           </a>
         </div>
       )
@@ -54,19 +54,19 @@ const selected = [...featured, ...rest].slice(0, 5);
   </section>
 
   <section id="about" class="mx-auto max-w-3xl px-6 pb-20">
-    <SectionHeading eyebrow="About" />
+    <SectionHeading eyebrow="À propos" />
     <p class="text-ink-soft max-w-xl">
       {SITE.description}
     </p>
     <a href="/about" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
-      More about how I work →
+      En savoir plus sur ma façon de faire →
     </a>
   </section>
 
   <section id="contact" class="mx-auto max-w-3xl px-6 pb-24">
-    <SectionHeading eyebrow="Let's talk" />
+    <SectionHeading eyebrow="Contact" />
     <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
-      Have something worth building?
+      Une idée à construire ?
     </p>
     <a
       href={`mailto:${SITE.email}`}

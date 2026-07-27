@@ -26,7 +26,7 @@ const formattedDate = formatDate(date);
 <BaseLayout title={title} description={summary}>
   <article class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
     <a href="/work" class="text-ink-soft hover:text-signal font-mono text-xs transition-colors">
-      ← All work
+      ← Tous les projets
     </a>
 
     <h1 class="font-display text-ink mt-6 max-w-2xl text-3xl font-medium sm:text-4xl">
@@ -36,12 +36,12 @@ const formattedDate = formatDate(date);
     <dl
       class="border-line text-ink-soft mt-6 flex flex-wrap gap-x-8 gap-y-2 border-y py-4 font-mono text-xs"
     >
-      <div><dt class="inline">Role —</dt><dd class="inline">{role}</dd></div>
+      <div><dt class="inline">Rôle —</dt><dd class="inline">{role}</dd></div>
       <div><dt class="inline">Date —</dt><dd class="inline">{formattedDate}</dd></div>
       {
         tags.length > 0 && (
           <div>
-            <dt class="inline">Stack — </dt>
+            <dt class="inline">Tags — </dt>
             <dd class="inline">{tags.join(', ')}</dd>
           </div>
         )
@@ -56,14 +56,14 @@ const formattedDate = formatDate(date);
       {
         url && (
           <Button href={url} variant="solid">
-            Visit live →
+            Voir en ligne →
           </Button>
         )
       }
       {
         repo && (
           <Button href={repo} variant="ghost">
-            View source
+            Code source
           </Button>
         )
       }

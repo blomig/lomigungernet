@@ -13,7 +13,7 @@ export function formatDate(
   style: DateStyle = "long",
   options?: Intl.DateTimeFormatOptions
 ) {
-  return new Intl.DateTimeFormat("en-US", {
+  return new Intl.DateTimeFormat("fr-FR", {
     timeZone: "UTC",
     ...dateStyles[style],
     ...options,
