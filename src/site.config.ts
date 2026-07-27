@@ -4,7 +4,7 @@ export const SITE = {
   name: 'Lomig Unger',
   role: 'Concepteur de choses',
   email: 'lomig.unger@gmail.com',
-  tagline: 'J''aime construire des choses. Si possible utiles',
+  tagline: "J'aime construire des choses. Si possible utiles.",
   description:
     'Portfolio de Lomig Unger — conception et fabrication de choses, avec un souci de clarté, de détail et d’usage réel.',
   status: 'En train de construire des trucs · ouvert aux échanges',
