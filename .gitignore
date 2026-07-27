@@ -19,8 +19,20 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Finder "duplicate" copies ("file 2.ext", "folder 2")
+* 2
+* 2.*
+* 2/
 
 # editor
 .vscode/*
 !.vscode/extensions.json
 .idea/
+
+# local tooling noise
+*.log
+.cache/
