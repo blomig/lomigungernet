@@ -1,0 +1,17 @@
+---
+/**
+ * Petite ligne de statut (point signal + texte mono),
+ * comme sur l’accueil — réutilisable pour le site ou un projet.
+ */
+interface Props {
+  status: string;
+  class?: string;
+}
+
+const { status, class: className } = Astro.props;
+---
+
+<p class:list={['text-ink-soft inline-flex items-center gap-2 font-mono text-xs', className]}>
+  <span class="bg-signal h-1.5 w-1.5 shrink-0 rounded-full" aria-hidden="true"></span>
+  {status}
+</p>

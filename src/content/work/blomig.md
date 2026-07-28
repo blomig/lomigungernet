@@ -4,6 +4,7 @@ summary: Blog
 role: blogueur
 date: 2006-12-01
 tags: [Ecriture, Réflexion, Animation]
+status: En cours · blog actif depuis 2006
 url: https://blomig.com
 # repo: https://github.com/…
 featured: false

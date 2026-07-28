@@ -13,6 +13,8 @@ const work = defineCollection({
       summary: z.string().max(160),
       role: z.string(),
       date: z.coerce.date(),
+      // Ex. "Terminé", "En cours", "En pause" — affiché comme le status de l’accueil
+      status: z.string().optional(),
       tags: z.array(z.string()).default([]),
       cover: image().optional(),
       url: z.url().optional(),

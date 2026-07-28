@@ -4,6 +4,7 @@ summary: Deux livres d'animobjets (animaux+objets)
 role: concepteur, dessinateur
 date: 2020-06-01
 tags: [Conception, Dessin, Procreate]
+status: Terminé · livres autoédités sur Amazon
 url: https://www.amazon.fr/Animobjets-1-Lomig-UNGER-ebook/dp/B08SQSBRXP
 # repo: https://github.com/…
 featured: false
