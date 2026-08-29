@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeu du dico — Politique de confidentialité</title>
+  <style>
+    :root {
+      --fond: #E8F2EE;
+      --papier: #FFF8EE;
+      --encre: #1F2E28;
+      --encre2: #4A635C;
+      --cta: #2A9D8F;
+      --miel: #E9C46A;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Nunito", "Avenir Next", "Segoe UI", sans-serif;
+      background: var(--fond);
+      color: var(--encre);
+      line-height: 1.55;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+    .card {
+      background: var(--papier);
+      border-radius: 8px;
+      padding: 28px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(31, 46, 40, 0.08);
+    }
+    h1 { font-size: 1.85rem; margin: 0 0 8px; }
+    h2 { font-size: 1.25rem; margin: 8px 0 12px; }
+    h3 { font-size: 1.05rem; margin: 20px 0 8px; }
+    p, li { margin: 0 0 10px; color: var(--encre); }
+    .muted { color: var(--encre2); }
+    a { color: var(--cta); }
+    ul { margin: 0 0 12px 1.2em; padding: 0; }
+    .lang-nav { display: flex; gap: 10px; margin-top: 14px; }
+    .lang-nav a {
+      text-decoration: none;
+      background: #FFFDF8;
+      color: var(--encre);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+    }
+    .kicker {
+      color: var(--encre2);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.78rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>Jeu du dico</h1>
+      <p class="muted">Politique de confidentialité · Privacy policy</p>
+      <p class="muted">Dernière mise à jour : 29 août 2026</p>
+      <p>Jeu de société sur iPhone, édité par Terrasse Studio (Lomig Unger). Pas de compte développeur, pas de pub.</p>
+      <div class="lang-nav">
+        <a href="#francais">Français</a>
+        <a href="#english">English</a>
+      </div>
+    </section>
+
+    <section id="francais" class="card">
+      <div class="kicker">Français</div>
+      <h2>Politique de confidentialité</h2>
+      <p>
+        Cette page décrit quelles données <strong>Jeu du dico</strong> utilise pour fonctionner.
+        L’app ne crée pas de compte chez l’éditeur. Le nom affiché est celui que vous tapez.
+      </p>
+
+      <h3>1. Sur votre iPhone</h3>
+      <p>L’app peut enregistrer localement, uniquement pour le jeu :</p>
+      <ul>
+        <li>votre prénom / pseudo tapé ;</li>
+        <li>un identifiant de siège (UUID) pour retrouver votre place après une microcoupure ;</li>
+        <li>un instantané de partie si vous êtes l’hôte.</li>
+      </ul>
+      <p>Ces données restent sur l’appareil. Les supprimer : désinstaller l’app.</p>
+
+      <h3>2. Parties en ligne (iCloud / CloudKit)</h3>
+      <p>
+        Pour créer ou rejoindre une room (code à 4 lettres), iCloud est requis.
+        L’hôte publie l’état de la partie dans le container CloudKit
+        <code>iCloud.blomig.JeuDuDico</code> (base publique Apple). Y figurent notamment :
+      </p>
+      <ul>
+        <li>le code de la room ;</li>
+        <li>les pseudos des joueurs présents ;</li>
+        <li>l’état de jeu (phase, scores, définitions ou propositions, votes).</li>
+      </ul>
+      <p>
+        Ces données servent uniquement à synchroniser la partie entre les iPhone de la room.
+        Elles ne sont pas utilisées pour de la pub ni vendues.
+        Apple traite CloudKit selon sa propre politique de confidentialité.
+      </p>
+
+      <h3>3. Même pièce (réseau local)</h3>
+      <p>
+        Un filet Bluetooth / Wi‑Fi local (Multipeer) peut relayer la même room
+        en cas de microcoupure. Aucun serveur hors Apple n’est contacté pour cela.
+      </p>
+
+      <h3>4. Game Center</h3>
+      <p>
+        L’app peut tenter une connexion Game Center <strong>silencieuse</strong> au lancement
+        (aucun écran de login n’est présenté par le jeu). Le nom Game Center
+        n’est <strong>pas</strong> affiché. Les parties ne passent pas par les matchs Game Center.
+      </p>
+
+      <h3>5. Dictionnaire</h3>
+      <p>
+        Les mots et définitions sont embarqués dans l’app (Wiktionnaire, licence
+        CC BY-SA 4.0). Aucune requête réseau n’est faite vers le Wiktionnaire pendant le jeu.
+      </p>
+
+      <h3>6. Publicité, analytique, enfants</h3>
+      <p>Pas de SDK pub, pas d’outil d’analytique tiers, pas de tracking publicitaire (pas d’IDFA).</p>
+      <p>
+        Pas de collecte volontaire de données d’enfants via un compte éditeur.
+        iCloud / Game Center restent soumis aux règles et contrôles parentaux Apple.
+      </p>
+
+      <h3>7. Vos choix</h3>
+      <ul>
+        <li>Solo « Trouvez le mot » et partie démo : pas d’iCloud.</li>
+        <li>Refuser iCloud : vous ne pourrez pas créer ni rejoindre une room en ligne.</li>
+        <li>Supprimer l’app efface les données locales.</li>
+      </ul>
+
+      <h3>8. Modifications</h3>
+      <p>La version à jour de cette politique est celle publiée sur cette page.</p>
+
+      <h3>9. Contact</h3>
+      <p>
+        Pour une question de confidentialité, utilisez le formulaire de contact de la fiche
+        App Store de <em>Jeu du dico</em>, ou le site
+        <a href="https://www.blomig.com">www.blomig.com</a> s’il est disponible.
+      </p>
+    </section>
+
+    <section id="english" class="card">
+      <div class="kicker">English</div>
+      <h2>Privacy Policy</h2>
+      <p>
+        <strong>Jeu du dico</strong> is an iPhone party game published by Terrasse Studio (Lomig Unger).
+        There is no developer-run account. The name on screen is the nickname you type.
+      </p>
+
+      <h3>1. On your iPhone</h3>
+      <p>The app may store locally, for gameplay only:</p>
+      <ul>
+        <li>the nickname you typed;</li>
+        <li>a seat UUID so you can rejoin after a brief disconnect;</li>
+        <li>a host snapshot of the current game.</li>
+      </ul>
+      <p>This stays on device. Uninstalling the app removes it.</p>
+
+      <h3>2. Online games (iCloud / CloudKit)</h3>
+      <p>
+        Creating or joining a room (4-letter code) requires iCloud.
+        The host publishes game state to Apple CloudKit
+        (<code>iCloud.blomig.JeuDuDico</code>, public database), including room code,
+        player nicknames, and game state (phase, scores, definitions or guesses, votes).
+      </p>
+      <p>
+        That data exists only to sync the table between phones in the room.
+        It is not sold and not used for ads. Apple processes CloudKit under Apple’s privacy policy.
+      </p>
+
+      <h3>3. Same room (local network)</h3>
+      <p>
+        A Bluetooth / local Wi‑Fi fallback (Multipeer) may carry the same room
+        across brief network drops. No third-party game server is involved.
+      </p>
+
+      <h3>4. Game Center</h3>
+      <p>
+        The app may attempt a <strong>silent</strong> Game Center sign-in at launch
+        (the game never presents Apple’s login screen). The Game Center alias is
+        <strong>not</strong> shown. Matches do not use Game Center matchmaking.
+      </p>
+
+      <h3>5. Dictionary</h3>
+      <p>
+        Words and definitions ship inside the app (Wiktionnaire, CC BY-SA 4.0).
+        The game does not query Wiktionnaire over the network.
+      </p>
+
+      <h3>6. Ads, analytics, children</h3>
+      <p>No third-party ad SDK, no third-party analytics, no IDFA.</p>
+      <p>
+        The app does not run a developer account system aimed at collecting children’s data.
+        iCloud / Game Center remain under Apple’s rules and parental controls.
+      </p>
+
+      <h3>7. Your choices</h3>
+      <ul>
+        <li>Solo “Find the word” and demo mode do not use iCloud.</li>
+        <li>Without iCloud you cannot create or join an online room.</li>
+        <li>Deleting the app deletes local data.</li>
+      </ul>
+
+      <h3>8. Changes</h3>
+      <p>The current policy is the one published on this page.</p>
+
+      <h3>9. Contact</h3>
+      <p>
+        For privacy questions, use the contact options on the <em>Jeu du dico</em> App Store listing,
+        or <a href="https://www.blomig.com">www.blomig.com</a> if available.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
