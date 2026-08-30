@@ -31,7 +31,7 @@ Thème de base : [BracoZS/astro-starter-portfolio](https://github.com/BracoZS/as
 | Fichier | Rôle |
 | ------- | ---- |
 | `src/site.config.ts` | Nom, rôle, email, réseaux, tagline |
-| `src/content/work/*.md` | Un fichier = un projet |
+| `src/content/work/*.md` | Un fichier = un projet (`gallery:` pour une grille 3×3) |
 | `public/images/work/` | Images des projets (JPG/PNG OK) |
 | `src/styles/global.css` | Couleurs / design tokens |
 | `public/og-image.png` | Image Open Graph (1200×630) |

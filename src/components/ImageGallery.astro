@@ -1,0 +1,148 @@
+---
+interface Props {
+  images: string[];
+  label?: string;
+}
+
+const { images, label = 'Galerie' } = Astro.props;
+
+const items = images.map((src) => ({
+  src,
+  thumb: src.replace(/(\.\w+)$/, '-thumb$1'),
+}));
+---
+
+{
+  images.length > 0 && (
+    <figure class="mt-12" data-gallery>
+      <figcaption class="text-ink-soft mb-3 font-mono text-xs tracking-[0.2em] uppercase">
+        {label}
+      </figcaption>
+
+      <ul class="grid grid-cols-3 gap-1">
+        {
+          items.map((item, index) => (
+            <li>
+              <button
+                type="button"
+                class="border-line hover:border-signal focus-visible:outline-signal block aspect-square w-full cursor-pointer overflow-hidden border transition-colors"
+                data-gallery-open
+                data-src={item.src}
+                data-index={String(index)}
+                aria-label={`Voir la photo ${index + 1} en grand`}
+              >
+                <img
+                  src={item.thumb}
+                  alt=""
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                  decoding="async"
+                  class="block h-full w-full object-cover"
+                />
+              </button>
+            </li>
+          ))
+        }
+      </ul>
+
+      <dialog
+        data-gallery-dialog
+        class="bg-transparent m-auto max-h-[none] max-w-[min(92vw,52rem)] border-0 p-0 backdrop:bg-[#15161b]/80"
+        aria-label="Image en grand"
+      >
+        <div class="flex flex-col items-center gap-3">
+          <img
+            data-gallery-full
+            alt=""
+            class="max-h-[82vh] w-auto max-w-full"
+          />
+          <div class="flex items-center gap-5 font-mono text-xs text-[#f2f1ed]">
+            <button
+              type="button"
+              data-gallery-prev
+              class="hover:text-signal px-1 py-1"
+              aria-label="Photo précédente"
+            >
+              ←
+            </button>
+            <span data-gallery-count></span>
+            <button
+              type="button"
+              data-gallery-next
+              class="hover:text-signal px-1 py-1"
+              aria-label="Photo suivante"
+            >
+              →
+            </button>
+            <button
+              type="button"
+              data-gallery-close
+              class="hover:text-signal px-1 py-1"
+            >
+              Fermer
+            </button>
+          </div>
+        </div>
+      </dialog>
+    </figure>
+  )
+}
+
+<script>
+  function initGalleries() {
+    document.querySelectorAll<HTMLElement>('[data-gallery]').forEach((root) => {
+      if (root.dataset.bound) return;
+      root.dataset.bound = 'true';
+
+      const dialog = root.querySelector<HTMLDialogElement>('[data-gallery-dialog]');
+      const full = root.querySelector<HTMLImageElement>('[data-gallery-full]');
+      const count = root.querySelector<HTMLElement>('[data-gallery-count]');
+      const thumbs = [...root.querySelectorAll<HTMLButtonElement>('[data-gallery-open]')];
+      if (!dialog || !full || !count || thumbs.length === 0) return;
+
+      const sources = thumbs.map((thumb) => thumb.dataset.src ?? '');
+      let index = 0;
+
+      const show = (nextIndex: number) => {
+        index = (nextIndex + sources.length) % sources.length;
+        full.src = sources[index] ?? '';
+        count.textContent = `${index + 1} / ${sources.length}`;
+      };
+
+      const open = (nextIndex: number) => {
+        show(nextIndex);
+        if (!dialog.open) dialog.showModal();
+      };
+
+      thumbs.forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+          open(Number(thumb.dataset.index ?? 0));
+        });
+      });
+
+      root.querySelector('[data-gallery-prev]')?.addEventListener('click', (event) => {
+        event.stopPropagation();
+        show(index - 1);
+      });
+      root.querySelector('[data-gallery-next]')?.addEventListener('click', (event) => {
+        event.stopPropagation();
+        show(index + 1);
+      });
+      root.querySelector('[data-gallery-close]')?.addEventListener('click', () => {
+        dialog.close();
+      });
+
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+
+      dialog.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') show(index - 1);
+        if (event.key === 'ArrowRight') show(index + 1);
+      });
+    });
+  }
+
+  document.addEventListener('astro:page-load', initGalleries);
+</script>

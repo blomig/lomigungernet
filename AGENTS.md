@@ -10,3 +10,5 @@ Avant chaque commit demandé par Lomig :
 3. Push sur `main` seulement si c’est demandé.
 
 Lomig dépose les images en JPG/PNG comme d’habitude. Ne pas lui demander de les convertir lui-même.
+
+Un projet peut déclarer `gallery:` (liste de chemins WebP). Une grille 3×3 cliquable s’affiche sous l’article. `npm run images` génère aussi les miniatures `*-thumb.webp`.

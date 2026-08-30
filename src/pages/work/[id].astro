@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Button from '@/components/Button.astro';
+import ImageGallery from '@/components/ImageGallery.astro';
 import StatusLine from '@/components/StatusLine.astro';
 import { formatDate } from '@/utils/formatDate';
 
@@ -18,7 +19,7 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { title, summary, role, date, tags, status, url, repo } = entry.data;
+const { title, summary, role, date, tags, status, url, repo, gallery } = entry.data;
 const { Content } = await render(entry);
 
 const formattedDate = formatDate(date);
@@ -58,6 +59,14 @@ const formattedDate = formatDate(date);
     <div class="prose prose-sm sm:prose-base mt-6 max-w-2xl">
       <Content />
     </div>
+
+    {
+      gallery.length > 0 && (
+        <div class="max-w-2xl">
+          <ImageGallery images={gallery} />
+        </div>
+      )
+    }
 
     <div class="mt-10 flex flex-wrap gap-3">
       {

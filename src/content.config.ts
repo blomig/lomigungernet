@@ -21,6 +21,8 @@ const work = defineCollection({
       repo: z.url().optional(),
       featured: z.boolean().default(false),
       draft: z.boolean().default(false),
+      // Optional 3×3 (or any count) grid of images rendered under the article.
+      gallery: z.array(z.string()).default([]),
     }),
 });
 

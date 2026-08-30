@@ -42,6 +42,15 @@ for (const input of sources) {
     `${path.relative('.', input)}  ${meta.width}×${meta.height}  ${beforeKb}KB  →  ${info.width}×${info.height}  ${afterKb}KB`
   );
 
+  const thumbOutput = output.replace(/\.webp$/i, '-thumb.webp');
+  const thumb = await sharp(output)
+    .resize({ width: 720, withoutEnlargement: true })
+    .webp({ quality: 80, effort: 6 })
+    .toFile(thumbOutput);
+  console.log(
+    `  thumb  ${thumb.width}×${thumb.height}  ${(thumb.size / 1024).toFixed(0)}KB`
+  );
+
   replacements.push({
     from: path.basename(input),
     to: path.basename(output),
