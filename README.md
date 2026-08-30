@@ -24,6 +24,7 @@ Thème de base : [BracoZS/astro-starter-portfolio](https://github.com/BracoZS/as
 | `npm run build` | Check TypeScript + build → `./dist/` |
 | `npm run preview` | Prévisualise le build local |
 | `npm run format` | Formate le code (Prettier) |
+| `npm run images` | Convertit les JPG/PNG de `public/images/` en WebP |
 
 ## Personnalisation
 
@@ -31,9 +32,12 @@ Thème de base : [BracoZS/astro-starter-portfolio](https://github.com/BracoZS/as
 | ------- | ---- |
 | `src/site.config.ts` | Nom, rôle, email, réseaux, tagline |
 | `src/content/work/*.md` | Un fichier = un projet |
+| `public/images/work/` | Images des projets (JPG/PNG OK) |
 | `src/styles/global.css` | Couleurs / design tokens |
 | `public/og-image.png` | Image Open Graph (1200×630) |
 | `public/CNAME` | Domaine custom |
+
+Les JPG/PNG dans `public/images/` sont convertis en WebP avant commit (`npm run images`). Déposer les fichiers d’origine suffit.
 
 ## Déploiement
 
