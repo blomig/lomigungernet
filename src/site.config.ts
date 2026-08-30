@@ -2,9 +2,9 @@
 // and SEO defaults all read from here instead of hardcoding copy.
 export const SITE = {
   name: 'Lomig Unger',
-  role: 'Concepteur de choses',
+  role: 'Constructeur de trucs',
   email: 'lomig.unger@gmail.com',
-  tagline: "J'aime construire des choses. Si possible utiles.",
+  tagline: "Constructeur de trucs.",
   description:
     'Portfolio de Lomig Unger — conception et fabrication de choses, avec un souci de clarté, de détail et d’usage réel.',
   status: 'En train de construire des trucs · ouvert aux échanges',
