@@ -30,4 +30,5 @@ Parce que ce sont des jeux très marrants, collectifs et instructifs. Pour tous 
 Le jeu est gratuit, sans pub, et régulièrement mis à jour. N'hésitez pas à venir vous divertir avec le dictionnaire ! 
 
 ![Détail optionnel](/images/work/jeududico-02.jpg)
-(/images/work/jeududico-03.png)
+
+![Détail optionnel](/images/work/jeududico-03.png)
