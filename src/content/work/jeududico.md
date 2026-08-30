@@ -2,7 +2,7 @@
 title: Jeu du Dico
 summary: Un jeu iPhone autour des mots
 role: concepteur, testeur
-date: 2026-05-01
+date: 2026-08-24
 tags: [Conception, Grok, iOS]
 status: Terminé · jeu en cours de publication sur l'Appstore
 # url: https://apps.apple.com/fr/app/blomix/id6762053543
