@@ -11,7 +11,7 @@ featured: false
 draft: false
 ---
 
-![Artifact principal](/images/work/animobjets-01.jpg)
+![Artifact principal](/images/work/animobjets-01.webp)
 
 **Contexte** — En 2020 je me suis amusé sur Procreate (Ipad) à donner vie à des Animobjets. Cela faisait suite à une première version réalisée plus de 5 ans auparavant.
 
@@ -29,4 +29,4 @@ Parce que le partage des dessins sur Ipad a suscité plein d'échanges et de cr�
 ## Résultat
 Je me suis bien amusé et on partagé ce plaisir en famille. J'ai découvert le processus pour mettre ses livres en ligne sur Amazon.
 
-![Détail optionnel](/images/work/animobjets-02.jpg)
+![Détail optionnel](/images/work/animobjets-02.webp)

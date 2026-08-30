@@ -11,7 +11,7 @@ featured: false
 draft: false
 ---
 
-![Artifact principal](/images/work/blomig-01.jpg)
+![Artifact principal](/images/work/blomig-01.webp)
 
 **Contexte** — Depuis 2006, j'anime des blogs. Politique, réflexions, citations, animations de communautés et de réseaux. C'est une activité de fond qui m'a conduit à me réinventer professionnellement. 
 

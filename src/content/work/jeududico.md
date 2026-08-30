@@ -11,7 +11,7 @@ featured: false
 draft: false
 ---
 
-![Artifact principal](/images/work/jeududico-01.jpg)
+![Artifact principal](/images/work/jeududico-01.webp)
 
 **Contexte** — L'arrivée de Grok Build a transformé la manière d'utiliser l'IA. A l'arrivée de Grok Bot, j'ai voulu tester. Je n'en avais pas besoin vraiment (en fait Bot c'est pour automatiser des choses en liens avec d'autres outils, pour développer un truc sur mon Mac + git, Build est suffisant voire meilleur). Ce jeu a été le test fait. Impressionnant tout de même.
 
@@ -29,6 +29,6 @@ Parce que ce sont des jeux très marrants, collectifs et instructifs. Pour tous 
 ## Résultat
 Le jeu est gratuit, sans pub, et régulièrement mis à jour. N'hésitez pas à venir vous divertir avec le dictionnaire ! 
 
-![Détail optionnel](/images/work/jeududico-02.jpg)
+![Détail optionnel](/images/work/jeududico-02.webp)
 
-![Détail optionnel](/images/work/jeududico-03.png)
+![Détail optionnel](/images/work/jeududico-03.webp)

@@ -11,7 +11,7 @@ featured: false
 draft: false
 ---
 
-![Artifact principal](/images/work/blomix-01.jpg)
+![Artifact principal](/images/work/blomix-01.webp)
 
 **Contexte** — En 2025 j'ai commencé à faire un proto avec Grok d'une idée de jeu, dans l'esprit Tetris / match-5. Après une première maquette en html, j'ai pu aller plus loin grâce aux outils IA et faire un vrai jeu Xcode, distribué sur l'Apple Store.
 
@@ -29,4 +29,4 @@ Parce que j'aime les petits jeux iPhone, et que c'est un très bon périmètre d
 ## Résultat
 Le jeu est gratuit, sans pub, et régulièrement mis à jour. N'hésitez pas à venir nous y défier ! 
 
-![Détail optionnel](/images/work/blomix-02.jpg)
+![Détail optionnel](/images/work/blomix-02.webp)
