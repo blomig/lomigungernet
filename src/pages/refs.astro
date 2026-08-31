@@ -1,0 +1,38 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import RefRow from '@/components/RefRow.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import { REF_SECTIONS } from '../data/refs';
+---
+
+<BaseLayout
+  title="Refs"
+  description="Portraits, articles, vidéos et thèses — références publiques autour de Lomig Unger."
+>
+  <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
+    <p class="text-ink-soft mb-6 font-mono text-xs tracking-[0.2em] uppercase">Refs</p>
+
+    <h1 class="font-display text-ink max-w-xl text-3xl font-medium sm:text-4xl">
+      Références.
+    </h1>
+
+    <p class="text-ink-soft mt-6 max-w-xl">
+      Portraits, articles, vidéos, et le fil académique — thèse, direction, jurys.
+    </p>
+
+    <div class="mt-16 flex flex-col gap-16">
+      {
+        REF_SECTIONS.map((section) => (
+          <section id={section.id}>
+            <SectionHeading eyebrow={section.title} count={section.items.length} />
+            <div>
+              {section.items.map((item) => (
+                <RefRow item={item} />
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,64 @@
+---
+import type { RefItem } from '../data/refs';
+
+interface Props {
+  item: RefItem;
+}
+
+const { item } = Astro.props;
+const { year, source, title, href, note, extras } = item;
+---
+
+<article class="border-line border-b py-5">
+  <a
+    href={href}
+    class="group grid grid-cols-[3.5rem_1fr_auto] items-start gap-4 sm:grid-cols-[4.5rem_1fr_auto] sm:gap-6"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="text-ink-soft pt-1 font-mono text-xs">{year ?? '—'}</span>
+
+    <span class="min-w-0">
+      <span class="text-ink-soft mb-1 block font-mono text-[11px] tracking-wide uppercase">
+        {source}
+      </span>
+      <span
+        class="font-display text-ink group-hover:text-signal block text-lg leading-snug transition-colors"
+      >
+        {title}
+      </span>
+      {
+        note && (
+          <span class="text-ink-soft mt-1 block text-sm leading-relaxed">{note}</span>
+        )
+      }
+    </span>
+
+    <span
+      aria-hidden="true"
+      class="text-ink-soft group-hover:text-signal pt-1 transition-all group-hover:translate-x-1"
+    >
+      →
+    </span>
+  </a>
+
+  {
+    extras && extras.length > 0 && (
+      <div class="mt-2 grid grid-cols-[3.5rem_1fr] gap-4 sm:grid-cols-[4.5rem_1fr] sm:gap-6">
+        <span></span>
+        <p class="flex flex-wrap gap-x-3 gap-y-1">
+          {extras.map((extra) => (
+            <a
+              href={extra.href}
+              class="text-signal font-mono text-[11px] hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {extra.label} →
+            </a>
+          ))}
+        </p>
+      </div>
+    )
+  }
+</article>
