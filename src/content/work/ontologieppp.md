@@ -1,12 +1,12 @@
 ---
 title: Ontologie PPP
 summary: Une ontologie des propriétés perceptuelles pertinentes pour l'esthétique
-role: concepteur, commanditaire
+role: Concepteur et Éditeur
 date: 2026-10-14
 tags: [Conception, Grok, Esthétique]
 status: En cours · version beta en ligne
 url: https://blomig.github.io/PPP-ontologie/
-# repo: https://github.com/…
+repo: https://github.com/blomig/PPP-ontologie
 featured: false
 draft: false
 ---
@@ -22,7 +22,12 @@ Une ontologie (une représentation formelle et partagée des concepts d'un domai
 Parce que le sujet me passionne depuis longtemps, et qu'il est assez complexe pour mettre vraiment à l'épreuve une équipe d'IA. Je voulais voir jusqu'où on pouvait aller en ne donnant qu'une intention et un brief, sans fournir moi-même le contenu.
 
 ## Comment
-- j'ai structuré une équipe d'agents dans Grok Bot, chacun avec son périmètre : coordination du projet, recherche sur l'état de l'art (dans une démarche scientifique à la Lakatos), conception du site, et une version pédagogique en langage courant pour rendre le tout lisible
+- j'ai structuré dans Grok Bot une petite équipe d'agents, chacun avec son rôle :
+  - un chef de projet, qui coordonne l'équipe, fait avancer le travail et me remonte les décisions à prendre ;
+  - un philosophe, qui mène la recherche sur l'état de l'art (dans une démarche scientifique à la Lakatos) et rédige les fiches ;
+  - un designer, qui construit le site et ses visuels ;
+  - un professeur, qui écrit la version pédagogique en langage courant, puis relit et valide chaque contenu avant publication ;
+  - un testeur, qui met l'ontologie à l'épreuve avec des cas concrets tirés de l'art et de l'esthétique.
 - au début ils me soumettaient toutes leurs questions à trancher, certaines très techniques sur la structure logique de l'ontologie. Leurs recommandations étaient si bonnes que je leur ai demandé de publier plus directement
 - au-delà du contenu et du site, ils ont aussi conçu la gouvernance des fiches : on peut en suggérer de nouvelles, en contester, ou proposer des exemples pour les illustrer. J'en parle plus longuement [sur Blomig](https://www.blomig.com/2026/10/14/ontologie-ppp/)
 
