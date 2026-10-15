@@ -32,4 +32,4 @@ Parce que le sujet me passionne depuis longtemps, et qu'il est assez complexe po
 - au-delà du contenu et du site, ils ont aussi conçu la gouvernance des fiches : on peut en suggérer de nouvelles, en contester, ou proposer des exemples pour les illustrer. J'en parle plus longuement [sur Blomig](https://www.blomig.com/2026/10/14/ontologie-ppp/)
 
 ## Résultat
-Une version beta en ligne, en français et en anglais, avec 17 fiches publiques et une vue Étoile pour naviguer entre les propriétés. Allez voir par exemple la fiche Teinte : [Ontologie PPP](https://blomig.github.io/PPP-ontologie/). Un travail de Lomig Unger et Grok Bot, toujours en cours.
+Une version beta en ligne, en français et en anglais, avec une trentaine de fiches publiques, et d'autres en préparation, ainsi qu'une vue Étoile pour naviguer entre les propriétés. Allez voir par exemple la fiche Teinte : [Ontologie PPP](https://blomig.github.io/PPP-ontologie/). Un travail de Lomig Unger et Grok Bot, toujours en cours.
