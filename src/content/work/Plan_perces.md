@@ -11,7 +11,7 @@ featured: false
 draft: false
 ---
 
-![Artifact principal](/)
+![Artifact principal](/images/work/plan-perces-01.webp)
 
 **Contexte** —  Un petit délire fait avec Grok suite à une inspiration tirée d'un ouvrage d'un artiste ayant fait pas mal de dessins abstraits de motifs & pavages (je cherche encore à retrouver son nom).
 
