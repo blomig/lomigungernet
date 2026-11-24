@@ -5,7 +5,7 @@ role: concepteur, testeur
 date: 2025-06-06
 tags: [Conception, Grok, Graphisme]
 status: Terminé · Prototype en ligne
-url: [Plans Percés](https://blomig.github.io/Plans/plans_perces.html)
+url: https://blomig.github.io/Plans/plans_perces.html
 # repo: https://github.com/…
 featured: false
 draft: false
